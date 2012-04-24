@@ -14,7 +14,7 @@
 
 	<body id="resume" tabindex="0">
 
-		<div id="resume-container">
+		<article id="resume-container">
 
 			<h1>Adam-Onishis-Resume:~ Type what you would like to see, or type --help for well help!</h1>
 
@@ -24,7 +24,7 @@
 				<span>&gt;&gt;</span>
 				<div class="commands"><b> </b></div>
 			</div>
-		</div>
+		</article>
 		
 		<div id="sections">
 			<div id="mission" class="section">
