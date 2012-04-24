@@ -7,3 +7,4 @@ The code does need a lot of tidying up though as it's not the best example of my
 ## Issues:
 
 *	Change long if statements to case statements.
+*	Re-write markup in HTML5
