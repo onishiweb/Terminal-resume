@@ -4,7 +4,8 @@ Ok, so that makes it sound worse than it is. About a year or so ago I decided to
 
 The code does need a lot of tidying up though as it's not the best example of my jQuery skillz but please fell free to fork away and have a little fun with it. You can find it running at http://onishiweb.co.uk/resume
 
-## Issues:
+## To do:
 
 *	Change long if statements to case statements.
 *	Re-write markup in HTML5
+*	Add download link to current resume
