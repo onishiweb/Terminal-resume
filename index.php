@@ -14,20 +14,10 @@
 
 	<body id="resume" tabindex="0">
 
-		<article id="resume-container">
+		<article id="sections">
+			<h1>Adam Onishi - Resume</h1>
 
-			<h1>Adam-Onishis-Resume:~ Type what you would like to see, or type --help for well help!</h1>
-
-			<div id="visible-sections"></div>
-
-			<div id="command-line">
-				<span>&gt;&gt;</span>
-				<div class="commands"><b> </b></div>
-			</div>
-		</article>
-		
-		<div id="sections">
-			<div id="mission" class="section">
+			<section id="mission" class="section">
 				<h2>About me:</h2>
 
 				<p>I am a motivated and competant front-end & PHP developer, working with the
@@ -39,9 +29,9 @@
 				<p><strong>My ultimate career goal is to always be doing amazing things and making a
 				difference to the web.</strong></p>
 				
-			</div>
+			</section>
 			
-			<div id="experience" class="section">
+			<section id="experience" class="section">
 				<h2>Experience:</h2>
 
 				<h3>Currently actively involved in</h3>
@@ -70,9 +60,9 @@
 				barman, barista and cocktail maker in various positions and locations including
 				event management.</p>
 				
-			</div>
+			</section>
 			
-			<div id="skills" class="section">
+			<section id="skills" class="section">
 				<h2>Skills:</h2>
 
 				<h3>Expert</h3>
@@ -109,9 +99,9 @@
 				</ul>
 				
 				
-			</div>
+			</section>
 			
-			<div id="education" class="section">
+			<section id="education" class="section">
 				<h2>Education:</h2>
 
 				<h3>BSc (hons) Computer Science - Oxford Brookes University. 2005 - 2010</h3>
@@ -129,9 +119,9 @@
 				
 				<h3>8 GCSEs @ Drayton School, Banbury.</h3>
 				
-			</div>
+			</section>
 			
-			<div id="interests" class="section">
+			<section id="interests" class="section">
 				<h2>Some of my other interests:</h2>
 
 				<ul>
@@ -142,9 +132,9 @@
 					<li>Musical comedy - funny stuff to music what more can you ask for.</li>
 				</ul>
 				
-			</div>
+			</section>
 
-			<div id="contact" class="section">
+			<section id="contact" class="section">
 			
 				<h2>Contact:</h2>
 
@@ -155,23 +145,35 @@
 					<li>Github: <a href="http://github.com/onishiweb">github.com/onishiweb</a></li>
 				</ul>
 
-			</div>
-		</div>
+			</section>
+		</article>
 
-			<div id="help" class="section">
-				<h2>Commands:</h2>
-				<p>Type any of the following commands to find out more about me:</p>
-				<ul class="help">
-					<li>about</li>
-					<li>experience</li>
-					<li>education</li>
-					<li>skills</li>
-					<li>interests</li>
-					<li>contact</li>
-					<li>everything</li>
-					<li style="clear:left">or exit to go back to onishiweb.co.uk</li>
-				</ul>
+		<aside id="help" class="section">
+			<h2>Commands:</h2>
+			<p>Type any of the following commands to find out more about me:</p>
+			<ul class="help">
+				<li>about</li>
+				<li>experience</li>
+				<li>education</li>
+				<li>skills</li>
+				<li>interests</li>
+				<li>contact</li>
+				<li>everything</li>
+				<li style="clear:left">or exit to go back to onishiweb.co.uk</li>
+			</ul>
+		</aside>
+
+		<article id="resume-container">
+
+			<h1>Adam-Onishi-Resume:~ Type what you would like to see, or type --help for well help!</h1>
+
+			<div id="visible-sections"></div>
+
+			<div id="command-line">
+				<span>&gt;&gt;</span>
+				<div class="commands"><b> </b></div>
 			</div>
+		</article>
 
 	</body>
 
