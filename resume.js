@@ -1,13 +1,13 @@
 function cursorAnimation()
-	{
-	  $("#command-line .commands b").animate(
-	  {
-		opacity: 0
-	  }, 450, "swing").animate(
-	  {
-		opacity: 1
-	  }, 1000, "swing");
-	}
+{
+  $("#command-line .commands b").animate(
+  {
+	opacity: 0
+  }, 450, "swing").animate(
+  {
+	opacity: 1
+  }, 1000, "swing");
+}
 	
 $(document).ready ( function () {
 
@@ -16,6 +16,11 @@ $(document).ready ( function () {
 	var sectionsArray = ["experience","education","mission","skills","contact","interests"];
 	var pastCommands = new Array();
 	
+	/*
+	document.onkeydown = function () {
+		alert ( "hello" );
+	};
+	*/
 	$(window).keydown( function (e) {
 		
 		var code = (e.keyCode) ? e.keyCode: e.charCode;
