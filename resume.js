@@ -16,21 +16,8 @@
  * CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS 
  * IN THE SOFTWARE.
  **/
-
-function cursorAnimation()
-	{
-	  $("#command-line .commands b").animate(
-	  {
-		opacity: 0
-	  }, 450, "swing").animate(
-	  {
-		opacity: 1
-	  }, 1000, "swing");
-	}
 	
 $(document).ready ( function () {
-
-	setInterval ( cursorAnimation, 1500 );
 
 	var sectionsArray = ["experience","education","mission","skills","contact","interests"];
 	var pastCommands = new Array();

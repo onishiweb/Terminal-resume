@@ -8,8 +8,6 @@
 
 		<link rel="stylesheet" type="text/css" href="resume.css" media="screen" />
 
-		<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script> 
-		<script src="resume.js"></script>
 	</head>
 
 	<body id="resume" tabindex="0">
@@ -20,7 +18,7 @@
 			<section id="mission" class="section">
 				<h2>About me:</h2>
 
-				<p>I am a motivated and competant front-end & PHP developer, working with the
+				<p>I am a motivated and competant front-end &amp; PHP developer, working with the
 				latest web technologies and Wordpress. I actively contributor to the web
 				community via my blog and speaking when I can as well as being a member of the
 				W3C Web Education Group and the new initiative for after school programming
@@ -163,7 +161,7 @@
 			</ul>
 		</aside>
 
-		<article id="resume-container">
+		<div id="resume-container">
 
 			<h1>Adam-Onishi-Resume:~ Type what you would like to see, or type --help for well help!</h1>
 
@@ -171,10 +169,11 @@
 
 			<div id="command-line">
 				<span>&gt;&gt;</span>
-				<div class="commands"><b> </b></div>
+				<div class="commands"><b></b></div>
 			</div>
-		</article>
+		</div>
 
+		<script type='text/javascript' src='jquery.min.js'></script>
+		<script type='text/javascript' src="resume.js"></script>
 	</body>
-
 </html>
