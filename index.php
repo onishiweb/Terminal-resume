@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html>
 	<head>
-
 		<meta charset="UTF-8" />
 
-		<title>Extremely talented PHP web developer - Front-end and UX enthusiast - Wordpress and Textpattern master - Adam Onishi</title>
+		<title>Extremely talented PHP web developer - Front-end and UX enthusiast - WordPress master - Adam Onishi</title>
 
 		<link rel="stylesheet" type="text/css" href="resume.css" media="screen" />
-
 	</head>
 
 	<body id="resume" tabindex="0">
@@ -161,7 +159,7 @@
 			</ul>
 		</aside>
 
-		<aside id="error">
+		<aside id="error" class="section">
 			<p class="error">&gt;&gt; Sorry that command could not be found, please try again or try using --help</p>
 		</aside>
 
@@ -177,7 +175,6 @@
 			</div>
 		</div>
 
-		<script type='text/javascript' src='jquery.min.js'></script>
 		<script type='text/javascript' src="resume.js"></script>
 	</body>
 </html>

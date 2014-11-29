@@ -105,7 +105,7 @@ p.error {
 	margin:0;
 }
 
-#sections, #help {
+#sections, #help, #error {
 	display:none;
 }
 
