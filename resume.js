@@ -16,13 +16,146 @@
  * CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS 
  * IN THE SOFTWARE.
  **/
+
+var sectionsArray = ["experience","education","mission","skills","contact","interests"];
+var pastCommands = new Array();
+var commandLine = document.querySelector('#command-line .commands');
+
+function keyPressHandler(e) {
+	var code = (e.keyCode) ? e.keyCode: e.charCode;
+
+	if( e.metaKey || e.ctrlKey || e.altKey )
+		return;
+
+	e.preventDefault();
+
+	switch(code) {
+		case 8:
+			backspaceKey();
+			break;
+		case 13:
+			enterKey();
+			break;
+		case 32:
+			addCharSpace();
+			break;
+		case 189:
+		case 109:
+			addCharDash();
+			break;
+		case 38:
+			upArrowKey();
+			break;
+		case 40:
+			downArrowKey();
+			break;
+		default:
+			letterKey(code);
+			break
+	}
+
+	console.log(code);
+}
+document.addEventListener("keydown", keyPressHandler);
+
+function enterKey() {
+	var command = $("#command-line .commands").text();
+
+	command = command.replace(/\s/g, "");
+	pastCommands.push(command);
 	
+	// Do stuff here to show all of the bits and bobs :)
+	$("#visible-sections").append("<div class=\"completed-command\">" + $("#command-line").html() + "</div>");
+	
+	if(command == "everything")
+	{
+		$("#visible-sections").append($("#sections").html());
+	}
+	else if(command == "--help")
+	{
+		$("#visible-sections").append($("#help").html());
+	}
+	else if (command == "about")
+	{
+		$("#visible-sections").append($("#mission").html());
+	}
+	else if( $.inArray(command, sectionsArray) != -1 )
+	{		
+		$("#visible-sections").append($("#"+command).html());
+	}
+	else if( command == "exit")
+	{
+		window.location = "http://onishiweb.co.uk/"
+	}			
+	else
+	{
+		$("#visible-sections").append("<p class=\"error\">&gt;&gt; Sorry that command could not be found, please try again or try using --help</p>");
+	}
+	
+	$("#command-line .commands").html("<b> </b>");
+	$("body").animate({ scrollTop: $("#visible-sections").height() }, 1500);
+}
+
+function backspaceKey() {
+	var str = $("#command-line .commands").text();
+
+	str = str.substring(0, str.length - 1);
+
+	$("#command-line .commands").html("<b> </b>");
+	$("#command-line .commands").append(str);
+}
+
+function letterKey(code) {
+	var c = '';
+
+	if( (code > 47 && code < 58) || (code > 95 && code < 106) ) {
+		// Top numbers
+		c = code - 48;
+		
+		// Keypad numbers
+		if( c > 9 ) {
+			c = c - 48;
+		}
+
+	} else {
+		code = code + 32;
+		c = String.fromCharCode(code);
+	}
+
+	commandLine.innerHTML += c;
+}
+
+function addCharSpace() {
+	$("#command-line .commands").append(" ");
+}
+
+function addCharDash() {
+	$("#command-line .commands").append("-");
+}
+
+function upArrowKey() {
+	// Get previous command
+}
+
+function downArrowKey() {
+	// Get next command
+}
+	
+
+
+
+
+
+
+
+
 $(document).ready ( function () {
 
 	var sectionsArray = ["experience","education","mission","skills","contact","interests"];
 	var pastCommands = new Array();
 	
-	$(window).keydown( function (e) {
+	// $(window).keydown( 
+	function old (e) {
 		
 		var code = (e.keyCode) ? e.keyCode: e.charCode;
 		
@@ -104,7 +237,7 @@ $(document).ready ( function () {
 			}
 		}
 			
-	});	
+	};	
 
 });
 
