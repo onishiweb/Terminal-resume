@@ -17,9 +17,10 @@
  * IN THE SOFTWARE.
  **/
 
-var sectionsArray = ["experience","education","mission","skills","contact","interests"];
-var pastCommands = new Array();
-var commandLine = document.querySelector('#command-line .commands');
+var sectionsArray = ["experience","education","about","skills","contact","interests"],
+	pastCommands = [],
+	commandLine = document.querySelector('#command-line .commands'),
+	visibleSection = document.getElementById('visible-sections');
 
 function keyPressHandler(e) {
 	var code = (e.keyCode) ? e.keyCode: e.charCode;
@@ -39,6 +40,9 @@ function keyPressHandler(e) {
 		case 32:
 			addCharSpace();
 			break;
+		case 187:
+			addCharPlusEquals(e);
+			break;
 		case 189:
 		case 109:
 			addCharDash();
@@ -50,59 +54,67 @@ function keyPressHandler(e) {
 			downArrowKey();
 			break;
 		default:
+			if( e.shiftKey )
+				return;
+
 			letterKey(code);
 			break
 	}
-
-	console.log(code);
 }
 document.addEventListener("keydown", keyPressHandler);
 
 function enterKey() {
-	var command = $("#command-line .commands").text();
-
-	command = command.replace(/\s/g, "");
+	var command = commandLine.innerText || commandLine.textContent;
+	// Store in past commands array
 	pastCommands.push(command);
-	
-	// Do stuff here to show all of the bits and bobs :)
-	$("#visible-sections").append("<div class=\"completed-command\">" + $("#command-line").html() + "</div>");
-	
-	if(command == "everything")
-	{
-		$("#visible-sections").append($("#sections").html());
+	// Add the completed command to the content section
+	var completed = document.createElement('div');
+	completed.classList.add('completed-command');
+	completed.innerHTML = document.getElementById('command-line').innerHTML;
+	visibleSection.appendChild(completed);
+
+	// Work out what command is running 
+	switch(command) {
+		case 'everything':
+			appendSection('sections');
+			break;
+		case '--help':
+			appendSection('help');
+			break;
+		case 'exit':
+			window.location = "http://adamonishi.com";
+			break;
+		default:
+			if( sectionsArray.indexOf(command) >= 0 ) {
+				appendSection(command);
+			} else {
+				appendSection('error');
+			}
+
+			break;
 	}
-	else if(command == "--help")
-	{
-		$("#visible-sections").append($("#help").html());
-	}
-	else if (command == "about")
-	{
-		$("#visible-sections").append($("#mission").html());
-	}
-	else if( $.inArray(command, sectionsArray) != -1 )
-	{		
-		$("#visible-sections").append($("#"+command).html());
-	}
-	else if( command == "exit")
-	{
-		window.location = "http://onishiweb.co.uk/"
-	}			
-	else
-	{
-		$("#visible-sections").append("<p class=\"error\">&gt;&gt; Sorry that command could not be found, please try again or try using --help</p>");
-	}
-	
-	$("#command-line .commands").html("<b> </b>");
-	$("body").animate({ scrollTop: $("#visible-sections").height() }, 1500);
+
+	commandLine.innerHTML = '<b></b>';
+}
+
+function appendSection(section) {
+	var newContent = document.createElement('div');
+	newContent.innerHTML = document.getElementById(section).innerHTML;
+
+	visibleSection.appendChild(newContent);
+	commandLine.scrollIntoView(false);
 }
 
 function backspaceKey() {
-	var str = $("#command-line .commands").text();
+	var str = commandLine.innerHTML;
 
 	str = str.substring(0, str.length - 1);
 
-	$("#command-line .commands").html("<b> </b>");
-	$("#command-line .commands").append(str);
+	if( str.slice(-5) === '&nbsp' ) {
+		str = str.substring(0, str.length - 5);		
+	}
+
+	commandLine.innerHTML = str;
 }
 
 function letterKey(code) {
@@ -126,11 +138,19 @@ function letterKey(code) {
 }
 
 function addCharSpace() {
-	$("#command-line .commands").append(" ");
+	commandLine.innerHTML += '&nbsp;';
 }
 
 function addCharDash() {
-	$("#command-line .commands").append("-");
+	commandLine.innerHTML += '-';
+}
+
+function addCharPlusEquals(e) {
+	if(e.shiftKey) {
+		commandLine.innerHTML += '+';
+	} else {
+		commandLine.innerHTML += '=';
+	}	
 }
 
 function upArrowKey() {

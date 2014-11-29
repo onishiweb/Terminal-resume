@@ -15,7 +15,7 @@
 		<article id="sections">
 			<h1>Adam Onishi - Resume</h1>
 
-			<section id="mission" class="section">
+			<section id="about" class="section">
 				<h2>About me:</h2>
 
 				<p>I am a motivated and competant front-end &amp; PHP developer, working with the
@@ -157,8 +157,12 @@
 				<li>interests</li>
 				<li>contact</li>
 				<li>everything</li>
-				<li style="clear:left">or exit to go back to onishiweb.co.uk</li>
+				<li style="clear:left">or exit to go back to adamonishi.com</li>
 			</ul>
+		</aside>
+
+		<aside id="error">
+			<p class="error">&gt;&gt; Sorry that command could not be found, please try again or try using --help</p>
 		</aside>
 
 		<div id="resume-container">
