@@ -20,7 +20,8 @@
 var sectionsArray = ["experience","education","about","skills","contact","interests"],
 	pastCommands = [],
 	commandLine = document.querySelector('#command-line .commands'),
-	visibleSection = document.getElementById('visible-sections');
+	visibleSection = document.getElementById('visible-sections'),
+	commandIndex = 0;
 
 function keyPressHandler(e) {
 	var code = (e.keyCode) ? e.keyCode: e.charCode;
@@ -29,6 +30,7 @@ function keyPressHandler(e) {
 		return;
 
 	e.preventDefault();
+	commandIndex--;
 
 	switch(code) {
 		case 8:
@@ -51,6 +53,7 @@ function keyPressHandler(e) {
 			upArrowKey();
 			break;
 		case 40:
+			commandIndex += 2;
 			downArrowKey();
 			break;
 		default:
@@ -130,6 +133,7 @@ function letterKey(code) {
 		}
 
 	} else {
+		// Letters
 		code = code + 32;
 		c = String.fromCharCode(code);
 	}
@@ -154,9 +158,18 @@ function addCharPlusEquals(e) {
 }
 
 function upArrowKey() {
-	// Get previous command
+	if( commandIndex < 0 ) {
+		commandIndex = pastCommands.length - 1;
+	}
+
+	commandLine.innerHTML = pastCommands[commandIndex] + '<b></b>';
 }
 
 function downArrowKey() {
 	// Get next command
+	if( commandIndex >= pastCommands.length ) {
+		commandLine.innerHTML = '<b></b>';
+	} else {
+		commandLine.innerHTML = pastCommands[commandIndex] + '<b></b>';
+	}
 }
