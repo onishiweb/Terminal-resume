@@ -170,6 +170,7 @@
 				<li>interests</li>
 				<li>contact</li>
 				<li>everything</li>
+				<li>download - to download a PDF of all sections</li>
 				<li style="clear:left">or exit to go back to adamonishi.com</li>
 			</ul>
 		</aside>
