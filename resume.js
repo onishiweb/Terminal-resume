@@ -84,8 +84,11 @@ function enterKey() {
 		case '--help':
 			appendSection('help');
 			break;
+		case 'download':
+			window.location = 'resume.pdf'
+			break;
 		case 'exit':
-			window.location = "http://adamonishi.com";
+			window.location = 'http://adamonishi.com';
 			break;
 		default:
 			if( sectionsArray.indexOf(command) >= 0 ) {
