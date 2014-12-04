@@ -14,86 +14,102 @@
 			<h1>Adam Onishi - Resume</h1>
 
 			<section id="about" class="section">
-				<h2>About me:</h2>
 
-				<p>I am a motivated and competant front-end &amp; PHP developer, working with the
-				latest web technologies and Wordpress. I actively contributor to the web
-				community via my blog and speaking when I can as well as being a member of the
-				W3C Web Education Group and the new initiative for after school programming
-				clubs (Code Club).</p>
+				<h2>About me</h2>
 
-				<p><strong>My ultimate career goal is to always be doing amazing things and making a
-				difference to the web.</strong></p>
+				<p>I am a self motivated and expert front-end &amp; PHP developer, working with the latest and most exciting web technologies. I enjoy an active role contributing to the web community via writing and created the extremely successful web events and community sites <a href="http://12devs.co.uk">12 Devs</a> and <a href="http://12devsofxmas.co.uk">12 Devs of Xmas</a>.</p>
+
+				<p>I’m a regular public speaker having spoken at a variety of events and conferences, from monthly meet ups, Front End London and London Web Standards, through to international conferences including the New York Sass Conf and Devs Love Bacon in London. During 2013 I wrote a book with Apress - Pro WordPress Theme Development <a href="http://www.amazon.co.uk/Adam-Onishi/e/B00J35BQZG/">Expert's Voice in Web Development</a>.</p>
+
+				<p>I started road cycling during 2013 and after only a few months was able to start raising money for charity, most notably in 2014 where I participated in the Prudential RideLondon raising £700 for the Save the Rhino charity.</p>
+
+				<p><strong>My ultimate career goal is to always be doing things that interest me and aiming to make a difference to the web</strong>.</p>
 				
 			</section>
 			
 			<section id="experience" class="section">
 				<h2>Experience:</h2>
 
-				<h3>Currently actively involved in</h3>
+				<h3>Senior Front-end developer</h3>
+
+				<h4>Architect (June 2013 - Present)</h4>
 
 				<ul>
-					<li>Organiser and writer for 12 Devs of Xmas (http://12devsofxmas.co.uk).</li>
-					<li>Developer for Points Brighton mini-conference (http://pointsbrighton.co.uk).</li>
-					<li>Member of W3C Web Education Community Group.</li>
-					<li>Member of Code Club initiative, teaching children 10-11 to code.</li>
-					<li>Lecturing at Oxford Brookes University, Web Design module.</li>
+					<li>Senior developer on the front-end team.</li>
+					<li>Responsible for managing a team of developers (workloads and job progression).</li>
+					<li>Helped win one of the largest projects Architect had taken on; the rebuild and launch of one of Unilever’s biggest brands: Persil.</li>
+					<li>Lead developer on a large project WordPress Multisite, Sass (and Compass), and JavaScript/jQuery architecture.</li>
+					<li>Responsible for code reviews on front-end code.</li>
+					<li>Responsible for formalising the front-end processes:
+						<ul>
+							<li>created a front-end boilerplate,</li>
+							<li>introduced a front-end code style guide,</li>
+							<li>helped bring in code review practices.</li>
+						</ul>
+					</li>
 				</ul>
 
-				<h3>Web Developer - One Ltd. Aug 2009 - Present day</h3>
+				<p>Because of my attitude towards process and education the agency now take more serious approach to developer education with internal practices and in the form of external training and conferences.</p>
 
-				<p>Lead developer for front-end and Wordpress projects, working closely with the
-				designers to create the best possible websites. I manage the development team
-				and web project scheduling and have recently initiated a large review of our
-				practices, introducing more structure and maintainability through the use of tools
-				like LESS, Git, Codekit as well as emphasising a better collaborative environment.
-				I have also put together a Wordpress boilerplate for the company's use which now
-				all of our websites are based upon. I also act as BBQ chef and occasional cake baker.</p>
-				
-				<h3>5 Years Hospitality Management - multiple bars/pubs. 2004 - 2009</h3>
-				
-				<p>Have served as Assistant Manager and Bar Supervisor as well as regular duties as
-				barman, barista and cocktail maker in various positions and locations including
-				event management.</p>
+				<h3>Front-end Developer</h3>
+
+				<h4>Big Fish (Aug 2012 - June 2013)</h4>
+
+				<ul>
+					<li>Dedicated front-end developer working on a variety of websites for Big Fish's clients.</li>
+					<li>Worked with up to date technologies including <strong>canvas</strong> and JavaScript to keep the client's web presence as up-to-date as possible.</li>
+					<li>Lead developer on the company’s first canvas game.</li>
+					<li>Pushed to bring responsive web design into the toolkit for the web team.</li>
+				</ul>
+
+				<h3>Web Developer</h3>
+
+				<h4>One Ltd (Aug 2009 - August 2012)</h4>
+
+				<ul>
+					<li>Lead developer for front-end and Wordpress projects.</li>
+					<li>Worked closely with the designers to create the best possible websites.</li>
+					<li>Managed the development team and web project scheduling.</li>
+					<li>Created a <strong>Wordpress boilerplate</strong>, which at the time all of our websites were based upon.</li>
+					<li>BBQ chef and occasional cake baker.</li>
+				</ul>
+
+				<p>While there I <strong>initiated a large review of the practices</strong> at One, introducing more structure and maintainability through the use of tools like <strong>LESS, Git, and Codekit</strong>, as well as emphasising a better collaborative environment.</p>
 				
 			</section>
 			
 			<section id="skills" class="section">
 				<h2>Skills:</h2>
 
-				<h3>Expert</h3>
+				<h3>Everyday use:</h3>
 
 				<ul>
-					<li>Wordpress</li>
-					<li>HTML5/XHTML</li>
+					<li>Well structured, accessible HTML</li>
 					<li>CSS/CSS3</li>
-					<li>LESS</li>
+					<li>Sass &amp; Compass</li>
+					<li>Grunt</li>
+					<li>Git</li>
+					<li>JavaScript</li>
 					<li>jQuery</li>
-					<li>Javascript</li>
+					<li>Progressive enhancement</li>
+					<li>Responsive web design</li>
+					<li>Mobile first</li>
+					<li>Accessibility</li>
+					<li>Performance</li>
+					<li>PHP</li>
+					<li>WordPress</li>
 				</ul>
-				
-				<h3>Intermediate</h3>
-				
+
+				<h3>Would like to do more of:</h3>
+
 				<ul>
-					<li>SQL</li>
-					<li>OO PHP</li>
-					<li>Project management</li>
-					<li>Cake making</li>
-					<li>Interaction design</li>
-					<li>LAMP environment</li>
+					<li>Design</li>
+					<li>Node</li>
+					<li>Meteor</li>
+					<li>Angular</li>
+					<li>Laravel</li>
+					<li>WebRTC</li>
 				</ul>
-				
-				<h3>Beginner</h3>
-				
-				<ul>
-					<li>Photoshop</li>
-					<li>Illustrator</li>
-					<li>Fireworks</li>
-					<li>Web design</li>
-					<li>Copywriting</li>
-					<li>iOS development</li>
-				</ul>
-				
 				
 			</section>
 			
@@ -109,6 +125,7 @@
 				</ul>
 
 				<h3>BTEC National Diploma for IT Practitioners @ Banbury College.</h3>
+				
 				<ul>
 					<li>Triple grade merit.</li>
 				</ul>
@@ -118,15 +135,12 @@
 			</section>
 			
 			<section id="interests" class="section">
-				<h2>Some of my other interests:</h2>
+				<h2>Interests:</h2>
 
-				<ul>
-					<li>Working on interesting web projects out of the office.</li>
-					<li>Attending web conferences, getting the opportunity to meet new people and take on new ideas.</li>
-					<li>Coffee - fresh over instant of course.</li>
-					<li>Racket sports - mostly squash.</li>
-					<li>Musical comedy - funny stuff to music what more can you ask for.</li>
-				</ul>
+				<p>Working on interesting web projects out of the office.</p>
+				<p>Attending web conferences, getting the opportunity to meet new people and take on new ideas.</p>
+				<p>Cycling, both commuting and regular sportives.</p>
+				<p>Food, both cooking and eating. If I hadn’t been so interested in programming I’d have probably become a pastry chef.</p>
 				
 			</section>
 
@@ -139,6 +153,7 @@
 					<li>Website: <a href="http://onishiweb.co.uk">onishiweb.co.uk</a></li>
 					<li>Twitter: <a href="http://twitter.com/onishiweb">@onishiweb</a></li>
 					<li>Github: <a href="http://github.com/onishiweb">github.com/onishiweb</a></li>
+					<li>Speakerdeck: <a href="http://speakerdeck.com/onishiweb">speakerdeck.com/onishiweb</a></li>
 				</ul>
 
 			</section>
