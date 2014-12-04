@@ -81,7 +81,6 @@ function enterKey() {
 		twilio_start = false;
 
 		if( command.length !== 11 ) {
-			console.log('no valid number');
 			appendSection('twilio-error');
 			commandLine.innerHTML = '<b></b>';
 			return;
