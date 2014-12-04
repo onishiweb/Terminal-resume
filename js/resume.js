@@ -21,7 +21,8 @@ var sectionsArray = ["experience","education","about","skills","contact","intere
 	pastCommands = [],
 	commandLine = document.querySelector('#command-line .commands'),
 	visibleSection = document.getElementById('visible-sections'),
-	commandIndex = 0;
+	commandIndex = 0,
+	twilio_start = false;
 
 function keyPressHandler(e) {
 	var code = (e.keyCode) ? e.keyCode: e.charCode;
@@ -76,6 +77,32 @@ function enterKey() {
 	completed.innerHTML = document.getElementById('command-line').innerHTML;
 	visibleSection.appendChild(completed);
 
+	if( twilio_start ) {
+		twilio_start = false;
+
+		if( command.length !== 11 ) {
+			console.log('no valid number');
+			appendSection('twilio-error');
+			commandLine.innerHTML = '<b></b>';
+			return;
+		}
+
+		if( ! isNaN(command) ) {
+			marmottajax.post({
+				url: "twilio.php",
+				options: { 
+					to_number: command,
+					twilio_go: 'go'
+				}
+			});
+
+			appendSection('twilio-in-progress');
+		}
+
+		commandLine.innerHTML = '<b></b>';
+		return;
+	}
+
 	// Work out what command is running 
 	switch(command) {
 		case 'everything':
@@ -89,6 +116,10 @@ function enterKey() {
 			break;
 		case 'exit':
 			window.location = 'http://adamonishi.com';
+			break;
+		case 'twilio':
+			twilio_start = true;
+			appendSection('twilio');
 			break;
 		default:
 			if( sectionsArray.indexOf(command) >= 0 ) {

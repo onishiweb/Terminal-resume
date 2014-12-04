@@ -157,6 +157,25 @@
 				</ul>
 
 			</section>
+
+			<section id="twilio" class="section">
+			
+				<h2 class="twilio">Please enter your mobile number:</h2>
+				<h3 class="twilio">(numbers are not stored and you will not be spammed, honest)</h3>
+
+			</section>
+
+			<section id="twilio-in-progress" class="section">
+			
+				<h2 class="twilio">Calling, please wait...</h2>
+
+			</section>
+
+			<section id="twilio-error" class="section">
+			
+				<h2 class="twilio">Please enter a valid phone number:</h2>
+
+			</section>
 		</article>
 
 		<aside id="help" class="section">
@@ -191,6 +210,7 @@
 			</div>
 		</div>
 
-		<script type='text/javascript' src="resume.js"></script>
+		<script type='text/javascript' src="js/marmotte.min.js"></script>
+		<script type='text/javascript' src="js/resume.js"></script>
 	</body>
 </html>
