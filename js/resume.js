@@ -88,7 +88,7 @@ function enterKey() {
 
 		if( ! isNaN(command) ) {
 			marmottajax.post({
-				url: "twilio.php",
+				url: "http://adamonishi.com/resume/twilio.php",
 				options: { 
 					to_number: command,
 					twilio_go: 'go'
