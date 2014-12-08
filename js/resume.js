@@ -93,6 +93,8 @@ function enterKey() {
 					to_number: command,
 					twilio_go: 'go'
 				}
+			}).then(function(result) {
+				consoe.log(result);
 			});
 
 			appendSection('twilio-in-progress');

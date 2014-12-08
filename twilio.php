@@ -19,6 +19,8 @@ if( ! empty( $_POST ) && isset( $_POST['twilio_go'] ) ) {
 		// Read TwiML at this URL when a call connects (hold music)
 		'http://adamonishi.com/resume/rollingTwiML.php'
 	);
+
+	return $call;
 }
 
 if( isset($_GET['message']) ) {
