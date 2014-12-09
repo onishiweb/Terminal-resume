@@ -120,6 +120,9 @@ function enterKey() {
 		case 'exit':
 			window.location = 'http://adamonishi.com';
 			break;
+		case 'asteroids':
+			window.location = 'asteroids';
+			break;
 		case 'twilio':
 			twilio_start = true;
 			appendSection('twilio');
