@@ -10,25 +10,28 @@ $client = new Services_Twilio($sid, $token);
 
 if( ! empty( $_POST ) && isset( $_POST['twilio_go'] ) ) {
 	$params = array(
-		'StatusCallback' => 'http://adamonishi.com/resume/twilio.php?message=1',
+		'StatusCallback' => 'http://adamonishi.com/resume/twilio.php',
 	);
 
 	$call = $client->account->calls->create(
 		'XXXXXXXX', // From a valid Twilio number
 		$_POST['to_number'], // Text this number
 		// Read TwiML at this URL when a call connects (hold music)
-		'http://adamonishi.com/resume/rollingTwiML.php'
+		'http://adamonishi.com/resume/rollingTwiML.php',
+		$params
 	);
 
 	return $call;
 }
 
-if( isset($_GET['message']) ) {
+if( ! empty( $_POST ) && isset($_POST['CallDuration']) ) {
+
+	$message = 'Hi, you just got rickrolled for ' . $_POST['CallDuration'] . ' seconds by Adam Onishi. You can visit my resume at http://adamonishi.com/resume';
 
 	$message = $client->account->messages->sendMessage(
 		'XXXXXXXX', // From a valid Twilio number
 		'XXXXXXXX', // Text this number
-		"You just got called!"
+		$message
 	);
 
 }
