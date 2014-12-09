@@ -44,10 +44,12 @@ function keyPressHandler(e) {
 			addCharSpace();
 			break;
 		case 187:
+		case 61:
 			addCharPlusEquals(e);
 			break;
 		case 189:
 		case 109:
+		case 173:
 			addCharDash();
 			break;
 		case 38:
