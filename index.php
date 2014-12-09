@@ -5,7 +5,7 @@
 
 		<title>Extremely talented PHP web developer - Front-end and UX enthusiast - WordPress master - Adam Onishi</title>
 
-		<link rel="stylesheet" type="text/css" href="resume.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="resume.css?v1.0" media="screen" />
 	</head>
 
 	<body id="resume" tabindex="0">
@@ -157,6 +157,9 @@
 				</ul>
 
 			</section>
+		</article>
+
+		<article class="twilio-instructions">
 
 			<section id="twilio" class="section">
 			
@@ -176,6 +179,7 @@
 				<h2 class="twilio">Please enter a valid phone number:</h2>
 
 			</section>
+
 		</article>
 
 		<aside id="help" class="section">
@@ -211,6 +215,6 @@
 		</div>
 
 		<script type='text/javascript' src="js/marmotte.min.js"></script>
-		<script type='text/javascript' src="js/resume.js"></script>
+		<script type='text/javascript' src="js/resume.js?v1.0"></script>
 	</body>
 </html>

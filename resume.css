@@ -112,7 +112,7 @@ p.error {
 	margin:0;
 }
 
-#sections, #help, #error {
+#sections, #help, #error, .twilio-instructions {
 	display:none;
 }
 
