@@ -30,7 +30,7 @@ if( ! empty( $_POST ) && isset($_POST['CallDuration']) ) {
 
 	$message = $client->account->messages->sendMessage(
 		'XXXXXXXX', // From a valid Twilio number
-		'XXXXXXXX', // Text this number
+		$_POST['To'], // Text this number
 		$message
 	);
 
