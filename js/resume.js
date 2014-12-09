@@ -17,7 +17,7 @@
  * IN THE SOFTWARE.
  **/
 
-var sectionsArray = ["experience","education","about","skills","contact","interests"],
+var sectionsArray = ["experience","education","about","skills","contact","interests","design"],
 	pastCommands = [],
 	commandLine = document.querySelector('#command-line .commands'),
 	visibleSection = document.getElementById('visible-sections'),
@@ -122,6 +122,9 @@ function enterKey() {
 			break;
 		case 'asteroids':
 			window.location = 'asteroids';
+			break;
+		case 'book':
+			window.location = 'http://www.amazon.co.uk/gp/product/1430259140/ref=as_li_ss_il?ie=UTF8&camp=1634&creative=19450&creativeASIN=1430259140&linkCode=as2&tag=adamonishicom-21';
 			break;
 		case 'twilio':
 			twilio_start = true;

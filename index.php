@@ -5,7 +5,7 @@
 
 		<title>Extremely talented PHP web developer - Front-end and UX enthusiast - WordPress master - Adam Onishi</title>
 
-		<link rel="stylesheet" type="text/css" href="resume.css?v1.0" media="screen" />
+		<link rel="stylesheet" type="text/css" href="resume.css?v1.1" media="screen" />
 	</head>
 
 	<body id="resume" tabindex="0">
@@ -144,6 +144,21 @@
 				
 			</section>
 
+			<section id="design" class="section">
+				<h2>Design work</h2>
+
+				<h3><a href="https://bodypoliticdance.com/">BodyPolitic Dance website</a></h3>
+
+				<p>Initially designed by an ex-coworker while I served as the lead developer. Since going live I've been responsible for maintenance and keeping the site relevant, designing and building several new features alongside the client.</p>
+				<p><a href="https://bodypoliticdance.com/">Visit website</a></p>
+
+				<h3><a href="http://kareneonline.com">Karen Bengo</a></h3>
+
+				<p>Full design and build for a small freelance client. Aimed at being striking and minimalistic using large powerful background images in order to highlight the client's work as a model and actress.</p>
+				<p><a href="http://kareneonline.com">Visit website</a></p>
+				
+			</section>
+
 			<section id="contact" class="section">
 			
 				<h2>Contact:</h2>
@@ -192,7 +207,9 @@
 				<li>skills</li>
 				<li>interests</li>
 				<li>contact</li>
+				<li>book</li>
 				<li>everything</li>
+				<li>asteroids</li>
 				<li>download - to download a PDF of all sections</li>
 				<li style="clear:left">or exit to go back to adamonishi.com</li>
 			</ul>
@@ -215,6 +232,6 @@
 		</div>
 
 		<script type='text/javascript' src="js/marmotte.min.js"></script>
-		<script type='text/javascript' src="js/resume.js?v1.0"></script>
+		<script type='text/javascript' src="js/resume.js?v1.1"></script>
 	</body>
 </html>
