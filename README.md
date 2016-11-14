@@ -7,3 +7,7 @@ The code does need a lot of tidying up though as it's not the best example of my
 ## Update
 
 Since it's initial conception I've completely re-written all the JavaScript to work without jQuery. I've added a few extra features like the ability to download a full PDF and I'm currently working on getting command history working properly.
+
+**11/13/16:**
+- Began adding mobile support. Only tested on iOS. Current issue is it won't autoscroll the text visible enough with keyboard open.
+- Added mobile viewport meta for better display on mobile.
