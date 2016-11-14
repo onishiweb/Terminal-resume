@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8" />
-
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!--320-->
 		<title>Extremely talented PHP web developer - Front-end and UX enthusiast - WordPress master - Adam Onishi</title>
 
 		<link rel="stylesheet" type="text/css" href="resume.css?v1.1" media="screen" />
@@ -227,7 +227,7 @@
 
 			<div id="command-line">
 				<span>&gt;&gt;</span>
-				<div class="commands"><b></b></div>
+				<textarea id="commands" class="commands"></textarea>
 			</div>
 		</div>
 
