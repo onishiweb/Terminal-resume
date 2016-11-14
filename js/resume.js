@@ -17,7 +17,7 @@
  * IN THE SOFTWARE.
  **/
 
-var sectionsArray = ["experience","education","about","skills","contact","interests","design"],
+var sectionsArray = ["experience","education","about","skills","contact","interests"],
 	pastCommands = [],
 	commandLine = document.querySelector('#command-line .commands'),
 	visibleSection = document.getElementById('visible-sections'),
@@ -84,7 +84,7 @@ function enterKey() {
 
 		if( command.length !== 11 ) {
 			appendSection('twilio-error');
-			commandLine.innerHTML = '<b></b>';
+			commandLine.innerHTML = '';
 			return;
 		}
 
@@ -102,7 +102,7 @@ function enterKey() {
 			appendSection('twilio-in-progress');
 		}
 
-		commandLine.innerHTML = '<b></b>';
+		commandLine.innerHTML = '';
 		return;
 	}
 
@@ -123,9 +123,6 @@ function enterKey() {
 		case 'asteroids':
 			window.location = 'asteroids';
 			break;
-		case 'book':
-			window.location = 'http://www.amazon.co.uk/gp/product/1430259140/ref=as_li_ss_il?ie=UTF8&camp=1634&creative=19450&creativeASIN=1430259140&linkCode=as2&tag=adamonishicom-21';
-			break;
 		case 'twilio':
 			twilio_start = true;
 			appendSection('twilio');
@@ -140,7 +137,7 @@ function enterKey() {
 			break;
 	}
 
-	commandLine.innerHTML = '<b></b>';
+	commandLine.innerHTML = '';
 }
 
 function appendSection(section) {
@@ -205,14 +202,14 @@ function upArrowKey() {
 		commandIndex = pastCommands.length - 1;
 	}
 
-	commandLine.innerHTML = pastCommands[commandIndex] + '<b></b>';
+	commandLine.innerHTML = pastCommands[commandIndex] + '';
 }
 
 function downArrowKey() {
 	// Get next command
 	if( commandIndex >= pastCommands.length ) {
-		commandLine.innerHTML = '<b></b>';
+		commandLine.innerHTML = '';
 	} else {
-		commandLine.innerHTML = pastCommands[commandIndex] + '<b></b>';
+		commandLine.innerHTML = pastCommands[commandIndex] + '';
 	}
 }

@@ -64,7 +64,6 @@ h4 {
 
 #command-line {
 	float:left;
-	position:absolute;
 	left:0;
 	bottom:0;
 }
@@ -129,4 +128,14 @@ ul.help li {
 
 #skills h3 {
 	clear:left;
+}
+
+textarea#commands {
+	font-family:Courier,monospace;
+	color:#ccc;
+	font-size: 14px;
+    border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
 }

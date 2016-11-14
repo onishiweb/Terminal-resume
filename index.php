@@ -227,7 +227,7 @@
 
 			<div id="command-line">
 				<span>&gt;&gt;</span>
-				<div class="commands"><b></b></div>
+				<textarea id="commands" class="commands"></textarea>
 			</div>
 		</div>
 
