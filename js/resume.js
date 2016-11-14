@@ -76,7 +76,7 @@ function enterKey() {
 	// Add the completed command to the content section
 	var completed = document.createElement('div');
 	completed.classList.add('completed-command');
-	completed.innerHTML = document.getElementById('command-line').innerHTML;
+	completed.innerHTML = document.getElementById('command-line').innerHTML.replace('<textarea id="commands" class="commands">', '<b>');
 	visibleSection.appendChild(completed);
 
 	if( twilio_start ) {
