@@ -11,3 +11,16 @@ Since it's initial conception I've completely re-written all the JavaScript to w
 **11/13/16:**
 - Began adding mobile support. Only tested on iOS. Current issue is it won't autoscroll the text visible enough with keyboard open.
 - Added mobile viewport meta for better display on mobile.
+
+**Changes:**
+```
+<div id="commands" class="commands"></div>
+```
+to
+```
+<textarea id="commands" class="commands"></textarea>v
+```
+- Removed all the <b></b>.
+- Minor CSS changes.
+
+You can view a live example of mobile support here https://www.dev.jordans.io/terminal
