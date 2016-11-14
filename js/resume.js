@@ -145,7 +145,7 @@ function appendSection(section) {
 	newContent.innerHTML = document.getElementById(section).innerHTML;
 
 	visibleSection.appendChild(newContent);
-	commandLine.scrollIntoView(false);
+	commandLine.scrollIntoView(true);
 }
 
 function backspaceKey() {
