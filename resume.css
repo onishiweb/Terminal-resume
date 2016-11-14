@@ -138,4 +138,7 @@ textarea#commands {
     background-color: transparent;
     resize: none;
     outline: none;
+	margin-left: -2px;
+	margin-top: -2px;
+	font-weight: bold;
 }
